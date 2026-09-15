@@ -1,9 +1,11 @@
 name: auto
-on: push
+on:
+  push:
+    branches: "main"
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - run: |
           echo "hello world"
-          echo "this is auto trigger"
+          echo "this is auto trigger main branch only"
