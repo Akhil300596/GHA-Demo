@@ -1,9 +1,9 @@
-name: Job
-on: workflow_dispatch
+name: auto
+on: push
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - run: |
-         echo "hello world"
-         echo "pipe operator"
+          echo "hello world"
+          echo "this is auto trigger"
